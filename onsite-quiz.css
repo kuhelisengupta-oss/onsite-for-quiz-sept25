@@ -18,7 +18,7 @@ div.wrapper {
     width: 100%;
     height: 100%;
     z-index: 3222;
-    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/banner-quiz.png') center/cover no-repeat;
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/quiz-banner.png') center/cover no-repeat;
     /* Use "contain" if you want the full image visible without cropping */
 }
 
@@ -109,3 +109,4 @@ div#cnt a {
     font-size: 12px;
     font-family: sans-serif;
 }
+
