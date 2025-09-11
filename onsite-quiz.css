@@ -1,21 +1,21 @@
 div.wrapper {
-    height: auto !important;         /* allow flexible height */
-    min-height: 0 !important;        /* remove restrictions */
-    background-color: transparent;
-    border-top: none;
-    border-color: rgba(202, 10, 10, 0);
+    width: 100%;
+    height: auto !important;        /* let it grow with image */
+    background: none !important;
+    border: none !important;
     position: relative;
-    overflow: hidden;                /* clean edges */
+    overflow: hidden;               /* no unwanted scroll */
 }
 
 .wrapper:before {
     content: '';
     display: block;
     width: 100%;
-    padding-top: 28%; /* aspect ratio (for 900x250px banner ~28%) */
-    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/quiz-banner.png') center/contain no-repeat;
-    background-color: #000; /* fallback if image doesn’t load */
-    z-index: 3222;
+    height: auto;
+    min-height: 0;
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/quiz-banner.png') 
+                center center / contain no-repeat;
+    aspect-ratio: 900 / 250;        /* keeps the image ratio */
 }
 
 .description-container {
@@ -23,54 +23,12 @@ div.wrapper {
     position: absolute;
     bottom: 0;
     width: 100%;
+    left: 0;
 }
 
 .description {
-    padding-top: 20px !important;
-    color: #ffffff;
-}
-
-.close-action-container {
-    position: absolute;
-    bottom: 76px !important;
-    z-index: 9999999999 !important;
-}
-
-a {
-    color: transparent;
-}
-
-.svg-close-container {
-    display: none;
-    fill: transparent;
-    stroke: transparent;
-    stroke-width: 3px;
-}
-
-.close {
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    bottom: -48px;
-    right: 23px;
-}
-
-.container {
-    border-color: transparent;
-}
-
-.powered-by {
-    display: none;
-}
-
-.content-table {
-    background: transparent;
-    background-image: none;
-}
-
-.close-outer-container {
-    opacity: 1 !important;
+    padding: 10px;
+    color: #fff;
 }
 
 div#cnt {
@@ -78,12 +36,10 @@ div#cnt {
     font-family: sans-serif;
     color: white;
     font-size: 1.1em;
-    -webkit-font-smoothing: antialiased;
     font-weight: 400;
-    padding-left: 0px;
     line-height: 16px;
     position: relative;
-    z-index: 9999; /* make sure text is above banner */
+    z-index: 10;  /* ensure text stays above image */
 }
 
 div#cnt span {
@@ -94,13 +50,12 @@ div#cnt span {
 
 div#cnt a {
     position: absolute;
-    -webkit-font-smoothing: antialiased;
+    right: 10%;
+    top: -30px;   /* adjust this so button is visible properly */
     text-decoration: none;
     background-color: white;
     color: #9b2c2d;
-    right: 10%;
-    padding: 6px 10px;
-    margin-top: -14px;
+    padding: 6px 12px;
     border-radius: 3px;
     font-size: 12px;
     font-family: sans-serif;
