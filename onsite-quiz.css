@@ -1,62 +1,75 @@
-div.wrapper {
-    width: 100%;
-    height: auto !important;        /* let it grow with image */
-    background: none !important;
-    border: none !important;
+<style>
+/* Wrapper: makes sure banner adapts to image height */
+.wrapper {
+    height: auto !important;
     position: relative;
-    overflow: hidden;               /* no unwanted scroll */
+    background-color: transparent;
+    border-top: none;
+    border-color: rgba(202, 10, 10, 0);
 }
 
+/* Banner image using :before pseudo-element */
 .wrapper:before {
     content: '';
     display: block;
     width: 100%;
     height: auto;
-    min-height: 0;
-    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/quiz-banner.png') 
-                center center / contain no-repeat;
-    aspect-ratio: 900 / 250;        /* keeps the image ratio */
+    padding-top: 40%; /* maintains aspect ratio, adjust if needed */
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/banner-quiz.png') no-repeat center top;
+    background-size: contain; /* scale image fully without cropping */
+    z-index: 1;
 }
 
-.description-container {
-    background-color: #9b2c2d;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-}
-
-.description {
-    padding: 10px;
-    color: #fff;
-}
-
-div#cnt {
+/* Container for text and button */
+#cnt {
+    position: relative; /* so button stays inside wrapper */
+    z-index: 2; /* appear above banner */
     text-align: left;
     font-family: sans-serif;
     color: white;
     font-size: 1.1em;
+    padding: 15px 20px; /* breathing room */
+}
+
+/* Small description text */
+#cnt span {
+    display: block;
+    font-size: 0.85em;
     font-weight: 400;
-    line-height: 16px;
-    position: relative;
-    z-index: 10;  /* ensure text stays above image */
-}
-
-div#cnt span {
-    font-size: 0.8em;
-    font-weight: 100;
     line-height: 1.5em;
+    margin-top: 5px;
 }
 
-div#cnt a {
-    position: absolute;
-    right: 10%;
-    top: -30px;   /* adjust this so button is visible properly */
+/* CTA Button */
+#cnt a {
+    display: inline-block;
     text-decoration: none;
     background-color: white;
     color: #9b2c2d;
-    padding: 6px 12px;
+    padding: 8px 15px;
+    margin-top: 10px;
     border-radius: 3px;
     font-size: 12px;
+    font-weight: bold;
     font-family: sans-serif;
 }
+
+/* Hide unnecessary elements */
+.description-container, .powered-by, .svg-close-container {
+    display: none !important;
+}
+
+/* Optional: description colors and styling */
+.description {
+    color: #666666;
+    padding-top: 10px !important;
+}
+</style>
+
+<div class="wrapper">
+    <div id="cnt">
+        Play the Quiz<br>
+        <span>Win exclusive rewards</span>
+        <a href="https://pinkblue.in/pb-quiz">Play Now</a>
+    </div>
+</div>
