@@ -1,75 +1,107 @@
-<style>
-/* Wrapper: makes sure banner adapts to image height */
-.wrapper {
-    height: auto !important;
-    position: relative;
+div.wrapper {
+    height: 136px !important;
     background-color: transparent;
     border-top: none;
     border-color: rgba(202, 10, 10, 0);
+    position: relative; /* make sure pseudo-element positions correctly */
 }
 
-/* Banner image using :before pseudo-element */
-.wrapper:before {
+div.wrapper:before {
     content: '';
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    padding-top: 40%; /* maintains aspect ratio, adjust if needed */
-    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/banner-quiz.png') no-repeat center top;
-    background-size: contain; /* scale image fully without cropping */
-    z-index: 1;
+    height: 136px; /* match wrapper height */
+    z-index: 3222;
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/banner-quiz.png') no-repeat center center;
+    background-size: cover; /* keeps full banner visible */
 }
 
-/* Container for text and button */
-#cnt {
-    position: relative; /* so button stays inside wrapper */
-    z-index: 2; /* appear above banner */
+.description-container {
+    background-color: #9b2c2d;
+    top: 56%;
+    position: absolute;
+    width: 101%;
+}
+
+.description {
+    padding-top: 20px !important;
+    color: #666666;
+}
+
+.close-action-container {
+    position: absolute;
+    bottom: 76px !important;
+    z-index: 9999999999 !important;
+}
+
+a {
+    color: transparent;
+}
+
+.svg-close-container {
+    display: none;
+    fill: transparent;
+    stroke: transparent;
+    stroke-width: 3px;
+}
+
+.close {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    bottom: -48px;
+    right: 23px;
+}
+
+.container {
+    border-color: transparent;
+}
+
+.powered-by {
+    display: none;
+}
+
+.content-table {
+    background: transparent;
+    background-image: none;
+}
+
+.close-outer-container {
+    opacity: 1 !important;
+}
+
+div#cnt {
     text-align: left;
     font-family: sans-serif;
     color: white;
     font-size: 1.1em;
-    padding: 15px 20px; /* breathing room */
-}
-
-/* Small description text */
-#cnt span {
-    display: block;
-    font-size: 0.85em;
+    -webkit-font-smoothing: antialiased;
     font-weight: 400;
-    line-height: 1.5em;
-    margin-top: 5px;
+    padding-left: 0px;
+    line-height: 16px;
+    position: relative; /* ensure proper layering above pseudo-element */
 }
 
-/* CTA Button */
-#cnt a {
-    display: inline-block;
+div#cnt span {
+    font-size: 0.8em;
+    font-weight: 100;
+    line-height: 1.5em;
+}
+
+div#cnt a {
+    position: absolute;
+    -webkit-font-smoothing: antialiased;
     text-decoration: none;
     background-color: white;
     color: #9b2c2d;
-    padding: 8px 15px;
-    margin-top: 10px;
+    right: 0px;
+    padding: 6px 10px;
+    margin-right: 10%;
+    margin-top: -14px;
     border-radius: 3px;
     font-size: 12px;
-    font-weight: bold;
     font-family: sans-serif;
 }
-
-/* Hide unnecessary elements */
-.description-container, .powered-by, .svg-close-container {
-    display: none !important;
-}
-
-/* Optional: description colors and styling */
-.description {
-    color: #666666;
-    padding-top: 10px !important;
-}
-</style>
-
-<div class="wrapper">
-    <div id="cnt">
-        Play the Quiz<br>
-        <span>Win exclusive rewards</span>
-        <a href="https://pinkblue.in/pb-quiz">Play Now</a>
-    </div>
-</div>
