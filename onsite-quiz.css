@@ -1,83 +1,82 @@
 div.wrapper {
-    height: 136px !important;
+    height: auto !important; /* allow dynamic height */
+    min-height: 136px; /* ensure a base height */
     background-color: transparent;
     border-top: none;
     border-color: rgba(202, 10, 10, 0);
+    position: relative;
+    overflow: hidden; /* prevent any overflow */
 }
+
 .wrapper:before {
     content: '';
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 86px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    background-size: 100% 86px !important;
+    height: 100%;
     z-index: 3222;
-    background-repeat: no-repeat !important;
-    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/banner-quiz.png');
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/banner-quiz.png') center/cover no-repeat;
+    /* Use "contain" if you want the full image visible without cropping */
 }
 
 .description-container {
     background-color: #9b2c2d;
-    top: 56%;
     position: absolute;
-    width: 101%;
-}
-.description {
-    padding-top: 20px !important;
+    bottom: 0;
+    width: 100%;
 }
 
-.close-action-container{
-position: absolute;
-bottom: 76px !important;
+.description {
+    padding-top: 20px !important;
+    color: #ffffff;
 }
+
+.close-action-container {
+    position: absolute;
+    bottom: 76px !important;
+    z-index: 9999999999 !important;
+}
+
 a {
     color: transparent;
 }
+
 .svg-close-container {
-display: none;
+    display: none;
+    fill: transparent;
+    stroke: transparent;
+    stroke-width: 3px;
 }
+
 .close {
-bottom: -47px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    bottom: -48px;
+    right: 23px;
 }
+
 .container {
-border-color: transparent;
+    border-color: transparent;
 }
 
-.powered-by{
-display:none;
+.powered-by {
+    display: none;
 }
-
 
 .content-table {
-background: transparent;
-background-image: none;
-}
-.close-action-container {
-z-index: 9999999999 !important;
-}
-.svg-close-container {
-fill: transparent;
-stroke: transparent;
-stroke-width: 3px;
-}
-.close {
-text-align: center;
-text-decoration: none;
-cursor: pointer;
-position: relative;
-bottom: -48px;
-right: 23px;
-}
-.close-outer-container {
-opacity: 1 !important;
+    background: transparent;
+    background-image: none;
 }
 
-.description {
-    color: #666666;
+.close-outer-container {
+    opacity: 1 !important;
 }
+
 div#cnt {
     text-align: left;
     font-family: sans-serif;
@@ -87,26 +86,26 @@ div#cnt {
     font-weight: 400;
     padding-left: 0px;
     line-height: 16px;
+    position: relative;
+    z-index: 9999; /* ensure text shows above banner */
 }
+
 div#cnt span {
     font-size: 0.8em;
     font-weight: 100;
     line-height: 1.5em;
 }
+
 div#cnt a {
     position: absolute;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
     background-color: white;
     color: #9b2c2d;
-    right: 0px;
+    right: 10%;
     padding: 6px 10px;
-    margin-right: 10%;
     margin-top: -14px;
     border-radius: 3px;
     font-size: 12px;
     font-family: sans-serif;
 }
-
-
-
