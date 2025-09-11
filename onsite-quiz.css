@@ -16,7 +16,7 @@ div.wrapper {
     background-size: 100% 86px !important;
     z-index: 3222;
     background-repeat: no-repeat !important;
-    background: url('https://raw.githubusercontent.com/kuhelisengupta-oss/onsite-for-quiz-sept25/main/quiz-banner.png');
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/banner-quiz.png');
 }
 
 .description-container {
@@ -107,5 +107,6 @@ div#cnt a {
     font-size: 12px;
     font-family: sans-serif;
 }
+
 
 
