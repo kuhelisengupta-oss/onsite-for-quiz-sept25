@@ -16,11 +16,11 @@ div.wrapper {
     background-size: 100% 86px !important;
     z-index: 3222;
     background-repeat: no-repeat !important;
-    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/banner-quiz.png');
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/quiz-sept25.png');
 }
 
 .description-container {
-    background-color: #008080; /* Changed to Teal Blue */
+    background-color: #9b2c2d;
     top: 56%;
     position: absolute;
     width: 101%;
@@ -50,6 +50,7 @@ border-color: transparent;
 display:none;
 }
 
+
 .content-table {
 background: transparent;
 background-image: none;
@@ -75,7 +76,7 @@ opacity: 1 !important;
 }
 
 .description {
-    color: #666666;
+    color: #10ebd5;
 }
 div#cnt {
     text-align: left;
@@ -97,7 +98,7 @@ div#cnt a {
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
     background-color: white;
-    color: #008080; /* Button text matches teal blue for consistency */
+    color: #2c9b6f;
     right: 0px;
     padding: 6px 10px;
     margin-right: 10%;
@@ -106,3 +107,4 @@ div#cnt a {
     font-size: 12px;
     font-family: sans-serif;
 }
+
