@@ -16,7 +16,7 @@ div.wrapper {
     background-size: 100% 86px !important;
     z-index: 3222;
     background-repeat: no-repeat !important;
-    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/quiz-sept25.png');
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/quiz-banner-sized-new.png');
 }
 
 .description-container {
@@ -76,7 +76,7 @@ opacity: 1 !important;
 }
 
 .description {
-    color: #10ebd5;
+    color: #666666;
 }
 div#cnt {
     text-align: left;
@@ -98,7 +98,7 @@ div#cnt a {
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
     background-color: white;
-    color: #2c9b6f;
+    color: #9b2c2d;
     right: 0px;
     padding: 6px 10px;
     margin-right: 10%;
@@ -107,4 +107,5 @@ div#cnt a {
     font-size: 12px;
     font-family: sans-serif;
 }
+
 
