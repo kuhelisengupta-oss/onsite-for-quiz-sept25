@@ -16,7 +16,7 @@ div.wrapper {
     background-size: 100% 86px !important;
     z-index: 3222;
     background-repeat: no-repeat !important;
-    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/NEW_GST_PRICES.png');
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/new-gsst-prices.png');
 }
 
 .description-container {
@@ -108,5 +108,6 @@ div#cnt a {
     font-family: sans-serif;
 
 }
+
 
 
