@@ -16,7 +16,7 @@ div.wrapper {
     background-size: 100% 86px !important;
     z-index: 3222;
     background-repeat: no-repeat !important;
-    background: url('http://d16medg486y0dx.cloudfront.net/Christmas_Gallery/footer_image.png');
+    background: url('https://cdn.jsdelivr.net/gh/kuhelisengupta-oss/onsite-for-quiz-sept25@main/NEW_GST_PRICES.png');
 }
 
 .description-container {
@@ -106,4 +106,5 @@ div#cnt a {
     border-radius: 3px;
     font-size: 12px;
     font-family: sans-serif;
+
 }
