@@ -20,7 +20,7 @@ div.wrapper {
 }
 
 .description-container {
-    background-color: #9b2c2d;
+    background-color: #823366;
     top: 56%;
     position: absolute;
     width: 101%;
@@ -98,7 +98,7 @@ div#cnt a {
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
     background-color: white;
-    color: #9b2c2d;
+    color: #823366;
     right: 0px;
     padding: 6px 10px;
     margin-right: 10%;
@@ -108,4 +108,5 @@ div#cnt a {
     font-family: sans-serif;
 
 }
+
 
